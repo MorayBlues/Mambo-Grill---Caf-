@@ -1,189 +1,313 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery, Mambo Grill & Café.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <nav>
-        <div class="logo">
-            <div class="logo_main">MAMBO</div>
-            <div class="logo_sub">GRILL & CAFÉ</div>
+      <div class="logo">
+        <div class="logo_main">MAMBO</div>
+        <div class="logo_sub">GRILL & CAFÉ</div>
+      </div>
+      <div class="nav_links" id="nav_links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contacts.html">Contacts</a>
+      </div>
+      <button
+        class="nav_toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav_links"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <main class="gallery_page">
+      <h1>Get a Peek at Our Delicious Dishes</h1>
+      <section class="food">
+        <h2>Food</h2>
+        <figure>
+          <img src="images/gallery/mukimo.jpg" alt="Mukimo Dish" />
+          <figcaption>Kenyan Mukimo with stew</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/mahamri.jpg" alt="Mandazi" />
+          <figcaption>
+            Mandazi is a slightly sweet East African Street Food
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/gallery/ugalifish.jpg"
+            alt="Ugali fish and Sukumawiki"
+          />
+          <figcaption>Ugali with fried fish and sukumawiki</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/ugali.avif" alt="Ugali with sukumawiki" />
+          <figcaption>Ugali served with meaty sukumawiki</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/chapati.webp" alt="Chapati beef stew" />
+          <figcaption>Chapati with beef and kachumbari</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/pilau.avif" alt="Fried rice" />
+          <figcaption>
+            A plate of vibrant fried rice, glistening with aromatic oils.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/roastmeat.jpg" alt="mbuzi choma" />
+          <figcaption>Nyama choma slow cooked in outdoor kitchen</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/skumaugali.jpg" alt="Ugali with cabbage" />
+          <figcaption>Sukuma, ugali, cabbage</figcaption>
+        </figure>
+      </section>
+
+      <section class="grill">
+        <h2>Grill</h2>
+        <figure>
+          <img
+            src="images/gallery/t-boneroasted.jpg"
+            alt="Roasted T-bone steak"
+          />
+          <figcaption>
+            T-Bone Steak freshly roasted on Barbecue Grill
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/skewers.jpg" alt="Meat Skewers" />
+          <figcaption>Grilled Meat Skewers</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/blackangus.jpg" alt="Black Angus Steak" />
+          <figcaption>Grilled black angus beef steaks</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/stripion.jpg" alt="Sliced Striploin Steak" />
+          <figcaption>Grilled striploin sliced steak</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/grilledsteak.jpg" alt="Grilling Steak" />
+          <figcaption>Grilling steaks on flaming grill</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/roastedpork.jpg" alt="Roasted pork" />
+          <figcaption>Fatty roasted pork</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/chops.jpg" alt="Lamb Chops" />
+          <figcaption>Delicious Roasted Lamb Chops</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/tbone.jpg" alt="Steak freshly roasted" />
+          <figcaption>Grilled meat with vegetables</figcaption>
+        </figure>
+      </section>
+
+      <section class="interior">
+        <h2>Restaurant Interior</h2>
+        <figure>
+          <img src="images/gallery/rustic.jpg" alt="Rustic Interior" />
+          <figcaption>
+            We use a rustic design with wooden furniture and some decorative
+            plants
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/nightview.jpg" alt="Interior Night View" />
+          <figcaption>
+            This is how our restaurant looks like at night
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/bararea.jpg" alt="Service Counter" />
+          <figcaption>
+            This is where our customers can get their drinks
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/kitchen.jpg" alt="Our Kitchen" />
+          <figcaption>
+            We have a kitchen with Stainless Steel Equipment and Preparation
+            Area
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="exterior">
+        <h2>Restaurant Exterior</h2>
+        <figure>
+          <img
+            src="images/gallery/outsidetables.jpg"
+            alt="Table at the Garden"
+          />
+          <figcaption>
+            Wooden tables and chairs cover by red tablecloth in the garden.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/entrydoor.jpg" alt="Restaurant Entry Door" />
+          <figcaption>How the entry door area looks like.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/datetablenight.jpg" alt="Dinner Table" />
+          <figcaption>The perfect table for your date nights.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/sunsetview.jpg" alt="Summer patio" />
+          <figcaption>
+            Lovely summer patio setting in our restaurant.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="customers">
+        <h2>Our Customers</h2>
+        <figure>
+          <img
+            src="images/gallery/customerservice.jpg"
+            alt="Customers Being Served"
+          />
+          <figcaption>
+            Customers ordering from waitress in our restaurant
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/gallery/husbandwife.jpg"
+            alt="African Couple Eating"
+          />
+          <figcaption>
+            A couple eating at the restaurant and enjoying.
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/friends.jpg" alt="Friends Eating Together" />
+          <figcaption>Young people having fun at the restaurant</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/meetings.jpg" alt="Business Meeting" />
+          <figcaption>
+            Young entrepreneurs having a business meeting in restaurant.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="drinks">
+        <h2>Drinks</h2>
+        <figure>
+          <img
+            src="images/gallery/tropicalsmoothies.jpg"
+            alt="Serving Tropical Smoothies"
+          />
+          <figcaption>
+            Refreshing tropical smoothies served in our restaurant
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/gallery/drinkscounter.jpg"
+            alt="Drinks on a counter"
+          />
+          <figcaption>Glasses served on a bar counter</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/coffee.jpg" alt="Freshly Brewed Coffee" />
+          <figcaption>Coffee decorated with palms</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/gallery/orangejuice.jpg"
+            alt="Refreshing Orange juice Smoothies"
+          />
+          <figcaption>
+            Orange juice smoothie drink with a slice of orange
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/tea.jpg" alt="Milk Tea" />
+          <figcaption>A cup of milk tea on saucer on a table</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/coladrink.jpg" alt="Iced Cola Drink" />
+          <figcaption>Iced cola in fogged disposable plastic cup</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="images/gallery/strawberrydrink.avif"
+            alt="Cold Strawberry Drink"
+          />
+          <figcaption>A refreshing cold drink for a sunny day</figcaption>
+        </figure>
+        <figure>
+          <img src="images/gallery/juiceorange.avif" alt="Fresh Orange Juice" />
+          <figcaption>Orange juice from farm fresh oranges</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_main">
+        <div class="footer_logo">
+          <div class="logo_main">MAMBO</div>
+          <div class="logo_sub">GRILL & CAFÉ</div>
         </div>
-        <div class="nav_links">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About Us</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contacts.html">Contacts</a>
+        <div class="footer_links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contacts.html">Contacts</a>
         </div>
-    </nav>    
-
-        <main>
-            <section class="food">
-                <h2>Food</h2>
-                <figure>
-                    <img src="images/gallery/mukimo.jpg" alt="Mukimo Dish">
-                    <figcaption>Kenyan Mukimo with stew</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/mahamri.jpg" alt="Mandazi">
-                    <figcaption>Mandazi is a slightly sweet East African Street Food</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/ugalifish.jpg" alt="Ugali fish and Sukumawiki">
-                    <figcaption>Ugali with fried fish and sukumawiki</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/ugali.avif" alt="ugali with sukumawiki">
-                    <figcaption>Ugali served with meaty sukumawiki</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/chapati.webp" alt="Chapati beef stew">
-                    <figcaption>Chapati with beef and kachumbari</figcaption>
-                </figure>
-            </section>
-            
-            <section class="grill">
-                <h2>Grill</h2>
-                <figure>
-                    <img src="images/gallery/t-boneroasted.jpg" alt="Roasted T-bone steak">
-                    <figcaption>T-Bone Steak freshly roasted on Barbecue Grill</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/skewers.jpg" alt="Meat Skewers">
-                    <figcaption>Grilled Meat Skewers</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/blackangus.jpg" alt="Black Angus Steak">
-                    <figcaption>Grilled black angus beef steaks</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/stripion.jpg" alt="Sliced Striploin Steak">
-                    <figcaption>Grilled striploin sliced steak</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/grilledsteak.jpg" alt="Grilling Steak">
-                    <figcaption>Grilling steaks on flaming grill</figcaption>
-                </figure>
-            </section>
-
-            <section class="interior">
-                <h2>Restaurant Interior</h2>
-                <figure>
-                    <img src="images/gallery/rustic.jpg" alt="Rustic Interior">
-                    <figcaption>We use a rustic design with wooden furniture and some decorative plants</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/nightview.jpg" alt="Interior Night View">
-                    <figcaption>This is how our restaurant looks like at night</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/bararea.jpg" alt="Service Counter">
-                    <figcaption>This is where our customers can get their drinks</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/kitchen.jpg" alt="Our Kitchen">
-                    <figcaption>We have a kitchen with Stainless Steel Equipment and Preparation Area</figcaption>
-                </figure>
-            </section>
-
-            <section class="exterior">
-                <h2>Restaurant Exterior</h2>
-                <figure>
-                    <img src="images/gallery/outsidetables.jpg" alt="Table at the Garden">
-                    <figcaption>Wooden tables and chairs cover by red tablecloth in the garden.</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/entrydoor.jpg" alt="Restaurant Entry Door">
-                    <figcaption>How the entry door area looks like.</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/gallery/datetablenight.jpg" alt="Dinner Table">
-                    <figcaption>The perfect table for your date nights.</figcaption>
-                </figure>
-            </section>
-
-           <section class="customers">
-            <h2>Our Customers</h2>
-            <figure>
-                <img src="images/gallery/customerservice.jpg" alt="Customers Being Served">
-                <figcaption>Customers ordering from waitress in our restaurant</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery/husbandwife.jpg" alt="African Couple Eating">
-                <figcaption>A couple eating at the restaurant and enjoying.</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery/friends.jpg" alt="Friends Eating Together">
-                <figcaption>Young people having fun at the restaurant</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery/meetings.jpg" alt="Business Meeting">
-                <figcaption>Young entrepreneurs having a business meeting in restaurant.</figcaption>
-            </figure>
-           </section>
-
-           <section class="drinks">
-            <h2>Drinks</h2>
-            <figure>
-                <img src="images/gallery/tropicalsmoothies.jpg" alt="Serving Tropical Smoothies">
-                <figcaption>Refreshing tropical smoothies served in our restaurant</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery/drinkscounter.jpg" alt="Drinks on a counter">
-                <figcaption>Glasses served on a bar counter</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery/coffee.jpg" alt="Freshly Brewed Coffee">
-                <figcaption>Coffee decorated with palms</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery/orangejuice.jpg" alt="Refreshing Orange juice Smoothies">
-                <figcaption>Orange juice smoothie drink with a slice of orange</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery/tea.jpg" alt="Milk Tea">
-                <figcaption>A cup of milk tea on saucer on a table</figcaption>
-            </figure>
-            <figure>
-                <img src="images/gallery/coladrink.jpg" alt="Iced Cola Drink">
-                <figcaption>Iced cola in fogged disposable plastic cup</figcaption>
-            </figure>
-           </section>
-        </main>
-
-        <footer>
-            <div class="footer_logo">
-                <div class="logo_main">MAMBO</div>
-                <div class="logo_sub">GRILL & CAFÉ</div>
-            </div>
-            <div class="footer_links">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About Us</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contacts.html">Contacts</a>
-            </div>
-            <div class="social_links">
-                <div class="tiktok">
-                    <i class="fa-brands fa-tiktok"></i>
-                    <a href="#">@mambogrillcafe</a>
-                </div>
-                <div class="instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                    <a href="#">@mambogrillcafe</a>
-                </div>
-                <div class="facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                    <a href="#">@mambogrillcafe</a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Mambo Grill & Café. All rights reserved.</p>
-            </div>
-        </footer>
-</body>
-</html>            
+        <div class="social_links">
+          <div class="tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+          <div class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Mambo Grill & Café. All rights reserved.</p>
+      </div>
+    </footer>
+    <a
+      class="whatsapp_float"
+      href="https://wa.me/254712345678?text=Hello%20Mambo%20Grill%20%26%20Caf%C3%A9%2C%20I%20have%20a%20question"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="js/script.js"></script>
+  </body>
+</html>

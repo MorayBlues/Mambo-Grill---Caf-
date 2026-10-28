@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <nav>
@@ -15,13 +22,21 @@
         <div class="logo_main">MAMBO</div>
         <div class="logo_sub">GRILL & CAFÉ</div>
       </div>
-      <div class="nav_links">
+      <div class="nav_links" id="nav_links">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About Us</a>
         <a href="gallery.html">Gallery</a>
         <a href="contacts.html">Contacts</a>
       </div>
+      <button
+        class="nav_toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav_links"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
 
     <main>
@@ -30,119 +45,128 @@
           <h1>Mambo Grill & Café</h1>
           <p>
             Where Great Food Meets Good Vibes! Enjoy delicious grilled dishes,
-            refreshing drinks,<br />
-            and a warm dining experience made for good food and great moments.
+            refreshing drinks, and a warm dining experience made for good food
+            and great moments.
           </p>
         </div>
         <div class="cta_btn">
           <a
             class="btn"
-            href="https://wa.me/2547XXXXXXXX?text=Hello%20Mambo%20Grill%20%26%20Caf%C3%A9%2C%20I%27d%20like%20to%20place%20an%20order."
+            href="https://wa.me/254712345678?text=Hello%20Mambo%20Grill%20%26%20Caf%C3%A9%2C%20I%27d%20like%20to%20place%20an%20order."
             target="_blank"
             rel="noopener noreferrer"
-            >Chat With Us</a
+            ><i class="fa-brands fa-whatsapp"></i> Chat With Us</a
           >
-          <a class="btn" href="menu.html">View Our Menu</a>
+          <a class="btn-accent" href="menu.html">View Our Menu</a>
         </div>
       </section>
       <section class="popular_dishes">
         <h2>Popular Dishes</h2>
-        <div class="dish">
+        <article class="dish">
           <img src="images/grilledbeef.jpg" alt="Grilled Beef" />
           <p>A must-have for a Kenyan grill.</p>
-        </div>
-        <div class="dish">
+        </article>
+        <article class="dish">
           <img src="images/beefstewugali.jpg" alt="Beef Stew With Ugali" />
           <p>A Dish For Every Occasion</p>
-        </div>
-        <div class="dish">
+        </article>
+        <article class="dish">
           <img src="images/chickenwithchips.jpg" alt="Chicken With Fries" />
           <p>Perfectly Grilled Chicken With Crispy Fries</p>
-        </div>
+        </article>
       </section>
       <section class="about_teaser">
         <h3>Why Choose Us</h3>
         <p>
           At Mambo Grill & Café, we bring together bold Kenyan flavours, freshly
-          grilled favourites,<br />
-          and a relaxed atmosphere. Whether you're grabbing a quick bite or
-          enjoying a meal with friends and family,<br />
-          you'll find that there's always something delicious waiting for you.
+          grilled favourites, and a relaxed atmosphere. Whether you're grabbing
+          a quick bite or enjoying a meal with friends and family, you'll find
+          that there's always something delicious waiting for you.
         </p>
-        <a class="btn" href="about.html">Know Our Story</a>
+        <a class="btn-accent" href="about.html">Know Our Story</a>
       </section>
       <article>
         <h3>What Our Customers Say</h3>
-        <figure>
+        <figure class="review">
           <blockquote>
             <p>
-              "The nyama choma was absolutely delicious! The meat was tender,<br />
+              "The nyama choma was absolutely delicious! The meat was tender,
               well-seasoned, and served hot. Definitely coming back."
             </p>
-            <figcaption>-Brian M.</figcaption>
           </blockquote>
+          <figcaption>-Brian M.</figcaption>
         </figure>
-        <figure>
+        <figure class="review">
           <blockquote>
             <p>
-              "Great food, friendly service, and a really relaxed atmosphere.<br />
+              "Great food, friendly service, and a really relaxed atmosphere.
               Their grilled chicken is one of the best I've had."
             </p>
-            <figcaption>-Sharon W.</figcaption>
           </blockquote>
+          <figcaption>-Sharon W.</figcaption>
         </figure>
-        <figure>
+        <figure class="review">
           <blockquote>
             <p>
-              "Mambo Grill & Café is a great spot for catching up with
-              friends.<br />
+              "Mambo Grill & Café is a great spot for catching up with friends.
               Good portions, fair prices, and tasty food."
             </p>
-            <figcaption>-Kevin O.</figcaption>
           </blockquote>
+          <figcaption>-Kevin O.</figcaption>
         </figure>
       </article>
       <section class="location_teaser">
         <h3>Where To Find Us</h3>
         <p>
           Mambo Grill & Café is located in Ruai, Nairobi County near the Ruai
-          By-pass.<br />
-          We are open daily from 7am to 10pm. We are looking forward to serving
-          you.
+          By-pass. We are open daily from 7:00 AM to 10:00 PM. We are looking
+          forward to serving you.
         </p>
-        <a href="contacts.html">Come Find Us</a>
+        <a class="btn-accent" href="contacts.html">Come Find Us</a>
       </section>
     </main>
 
     <footer>
-      <div class="footer_logo">
-        <div class="logo_main">MAMBO</div>
-        <div class="logo_sub">GRILL & CAFÉ</div>
-      </div>
-      <div class="footer_links">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">About Us</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contacts.html">Contacts</a>
-      </div>
-      <div class="social_links">
-        <div class="tiktok">
-          <i class="fa-brands fa-tiktok"></i>
-          <a href="#">@mambogrillcafe</a>
+      <div class="footer_main">
+        <div class="footer_logo">
+          <div class="logo_main">MAMBO</div>
+          <div class="logo_sub">GRILL & CAFÉ</div>
         </div>
-        <div class="instagram">
-          <i class="fa-brands fa-instagram"></i>
-          <a href="#">@mambogrillcafe</a>
+        <div class="footer_links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contacts.html">Contacts</a>
         </div>
-        <div class="facebook">
-          <i class="fa-brands fa-facebook"></i>
-          <a href="#">@mambogrillcafe</a>
+        <div class="social_links">
+          <div class="tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+          <div class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
         </div>
       </div>
       <div class="copyright">
         <p>&copy; 2026 Mambo Grill & Café. All rights reserved.</p>
       </div>
     </footer>
+    <a
+      class="whatsapp_float"
+      href="https://wa.me/254712345678?text=Hello%20Mambo%20Grill%20%26%20Caf%C3%A9%2C%20I%20have%20a%20question"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="js/script.js"></script>
   </body>
 </html>

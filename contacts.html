@@ -1,59 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts, Mambo Grill & Café.</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
     <nav>
-        <div class="logo">
-            <div class="logo_main">MAMBO</div>
-            <div class="logo_sub">GRILL & CAFÉ</div>
+      <div class="logo">
+        <div class="logo_main">MAMBO</div>
+        <div class="logo_sub">GRILL & CAFÉ</div>
+      </div>
+      <div class="nav_links" id="nav_links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contacts.html">Contacts</a>
+      </div>
+      <button
+        class="nav_toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav_links"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+
+    <main>
+      <h1>Get in Touch</h1>
+      <div class="contact_info">
+        <section class="hours">
+          <h2>Operating Hours</h2>
+          <p>Monday – Sunday, 7:00 AM – 10:00 PM</p>
+        </section>
+        <section class="contacts">
+          <h2>Contact Information</h2>
+          <div class="whatsapp">
+            <a
+              href="https://wa.me/254712345678"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-whatsapp"></i> Message Us</a
+            >
+          </div>
+        </section>
+      </div>
+      <section class="location">
+        <h2>Location</h2>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.77881596577!2d36.95632306970451!3d-1.2550426123911218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f6c90c15ca769%3A0x8ccf2e1ea67e117b!2sRuai%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1789709735251!5m2!1sen!2ske"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
         </div>
-        <div class="nav_links">
-            <a href="index.html">Home</a>
-            <a href="menu.html">Menu</a>
-            <a href="about.html">About Us</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contacts.html">Contacts</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_main">
+        <div class="footer_logo">
+          <div class="logo_main">MAMBO</div>
+          <div class="logo_sub">GRILL & CAFÉ</div>
         </div>
-    </nav>    
-
-        <main>
-
-        </main>
-
-        <footer>
-            <div class="footer_logo">
-                <div class="logo_main">MAMBO</div>
-                <div class="logo_sub">GRILL & CAFÉ</div>
-            </div>
-            <div class="footer_links">
-                <a href="index.html">Home</a>
-                <a href="menu.html">Menu</a>
-                <a href="about.html">About Us</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="contacts.html">Contacts</a>
-            </div>
-            <div class="social_links">
-                <div class="tiktok">
-                    <i class="fa-brands fa-tiktok"></i>
-                    <a href="#">@mambogrillcafe</a>
-                </div>
-                <div class="instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                    <a href="#">@mambogrillcafe</a>
-                </div>
-                <div class="facebook">
-                    <i class="fa-brands fa-facebook"></i>
-                    <a href="#">@mambogrillcafe</a>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2026 Mambo Grill & Café. All rights reserved.</p>
-            </div>
-        </footer>
-</body>
-</html>            
+        <div class="footer_links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contacts.html">Contacts</a>
+        </div>
+        <div class="social_links">
+          <div class="tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+          <div class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 Mambo Grill & Café. All rights reserved.</p>
+      </div>
+    </footer>
+    <a
+      class="whatsapp_float"
+      href="https://wa.me/254712345678?text=Hello%20Mambo%20Grill%20%26%20Caf%C3%A9%2C%20I%20have%20a%20question"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -8,6 +8,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <nav>
@@ -15,22 +22,77 @@
         <div class="logo_main">MAMBO</div>
         <div class="logo_sub">GRILL & CAFÉ</div>
       </div>
-      <div class="nav_links">
+      <div class="nav_links" id="nav_links">
         <a href="index.html">Home</a>
         <a href="menu.html">Menu</a>
         <a href="about.html">About Us</a>
         <a href="gallery.html">Gallery</a>
         <a href="contacts.html">Contacts</a>
       </div>
+      <button
+        class="nav_toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="nav_links"
+      >
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
 
     <main>
+      <h1>Welcome to Our Menu Page</h1>
+      <div
+        class="menu_filters"
+        role="group"
+        aria-label="filter menu by category"
+      >
+        <button
+          type="button"
+          class="filter_btn is_active"
+          aria-pressed="true"
+          data-filter="all"
+        >
+          All
+        </button>
+        <button
+          type="button"
+          class="filter_btn"
+          aria-pressed="false"
+          data-filter="breakfast"
+        >
+          Breakfast
+        </button>
+        <button
+          type="button"
+          class="filter_btn"
+          aria-pressed="false"
+          data-filter="main_meals"
+        >
+          Main Meals
+        </button>
+        <button
+          type="button"
+          class="filter_btn"
+          aria-pressed="false"
+          data-filter="grill"
+        >
+          Grill
+        </button>
+        <button
+          type="button"
+          class="filter_btn"
+          aria-pressed="false"
+          data-filter="drinks"
+        >
+          Drinks
+        </button>
+      </div>
       <section class="breakfast">
         <h2>Breakfast</h2>
-        <article data-category="breakfast">
+        <article class="menu_item" data-category="breakfast">
           <h3>Kenyan Breakfast</h3>
           <p>Eggs, sausages, toast and fresh vegetables</p>
-          <span>Price:KSh 450</span>
+          <span class="price">KSh 450</span>
           <img src="images/classicbrekfast.avif" alt="Kenyan Breakfast" />
           <a
             class="btn"
@@ -38,10 +100,10 @@
             >Order</a
           >
         </article>
-        <article data-category="breakfast">
+        <article class="menu_item" data-category="breakfast">
           <h3>Pancakes & Honey</h3>
           <p>Fluffy pancakes served with honey and fresh fruit</p>
-          <span>Price:KSh 350</span>
+          <span class="price">KSh 350</span>
           <img src="images/pancakeshoney.webp" alt="Pancakes & Honey" />
           <a
             class="btn"
@@ -49,10 +111,10 @@
             >Order</a
           >
         </article>
-        <article data-category="breakfast">
+        <article class="menu_item" data-category="breakfast">
           <h3>Mandazi & Chai</h3>
           <p>Fresh mandazi served with Kenyan tea</p>
-          <span>Price:KSh 250</span>
+          <span class="price">KSh 250</span>
           <img src="images/manadzichai.avif" alt="Mandazi & Chai" />
           <a
             class="btn"
@@ -60,10 +122,10 @@
             >Order</a
           >
         </article>
-        <article data-category="breakfast">
+        <article class="menu_item" data-category="breakfast">
           <h3>Spanish Omelette</h3>
           <p>Eggs, onions, tomatoes and peppers served with toast</p>
-          <span>Price:KSh 350</span>
+          <span class="price">KSh 350</span>
           <img src="images/spanishomlette.avif" alt="Spanish Omelette" />
           <a
             class="btn"
@@ -71,10 +133,10 @@
             >Order</a
           >
         </article>
-        <article data-category="breakfast">
+        <article class="menu_item" data-category="breakfast">
           <h3>Breakfast Chapati</h3>
           <p>Fresh chapati served with eggs and sausage</p>
-          <span>Price:KSh 400</span>
+          <span class="price">KSh 400</span>
           <img src="images/breakfastchapo.avif" alt="Breakfast Chapati" />
           <a
             class="btn"
@@ -82,10 +144,10 @@
             >Order</a
           >
         </article>
-        <article data-category="breakfast">
+        <article class="menu_item" data-category="breakfast">
           <h3>French Toast</h3>
           <p>Golden French toast served with honey and fresh fruit</p>
-          <span>Price:KSh 350</span>
+          <span class="price">KSh 350</span>
           <img src="images/frenchtoast.avif" alt="French Toast" />
           <a
             class="btn"
@@ -96,10 +158,10 @@
       </section>
       <section class="main_meals">
         <h2>Main Meals</h2>
-        <article data-category="main_meals">
+        <article class="menu_item" data-category="main_meals">
           <h3>Beef Stew & Ugali</h3>
           <p>Tender beef stew served with ugali and seasonal vegetables</p>
-          <span>Price:KSh 550</span>
+          <span class="price">KSh 550</span>
           <img src="images/beefstewugalimenu.webp" alt="Beef Stew & Ugali" />
           <a
             class="btn"
@@ -107,10 +169,10 @@
             >Order</a
           >
         </article>
-        <article data-category="main_meals">
+        <article class="menu_item" data-category="main_meals">
           <h3>Chicken & Rice</h3>
           <p>Seasoned chicken served with fragrant rice and vegetables</p>
-          <span>Price:KSh 600</span>
+          <span class="price">KSh 600</span>
           <img src="images/ckickerice.avif" alt="Chicken & Rice" />
           <a
             class="btn"
@@ -118,10 +180,10 @@
             >Order</a
           >
         </article>
-        <article data-category="main_meals">
+        <article class="menu_item" data-category="main_meals">
           <h3>Fish & Ugali</h3>
           <p>Fried fish served with ugali, greens and kachumbari</p>
-          <span>Price:KSh 650</span>
+          <span class="price">KSh 650</span>
           <img src="images/fishugali.webp" alt="Fish & Ugali" />
           <a
             class="btn"
@@ -129,10 +191,10 @@
             >Order</a
           >
         </article>
-        <article data-category="main_meals">
+        <article class="menu_item" data-category="main_meals">
           <h3>Chicken Curry & Rice</h3>
           <p>Creamy spiced chicken curry served with steamed rice</p>
-          <span>Price:KSh 600</span>
+          <span class="price">KSh 600</span>
           <img src="images/chickencullyrice.avif" alt="Chicken Curry & Rice" />
           <a
             class="btn"
@@ -140,10 +202,10 @@
             >Order</a
           >
         </article>
-        <article data-category="main_meals">
+        <article class="menu_item" data-category="main_meals">
           <h3>Pilau Beef</h3>
           <p>Spiced Kenyan pilau served with tender beef and kachumbari</p>
-          <span>Price:KSh 650</span>
+          <span class="price">KSh 650</span>
           <img src="images/pilaubeef.avif" alt="Pilau Beef" />
           <a
             class="btn"
@@ -151,10 +213,10 @@
             >Order</a
           >
         </article>
-        <article data-category="main_meals">
+        <article class="menu_item" data-category="main_meals">
           <h3>Beef Fried Rice</h3>
           <p>Stir-fried rice with tender beef, vegetables and herbs</p>
-          <span>Price:KSh 550</span>
+          <span class="price">KSh 550</span>
           <img src="images/beeffriedrice.webp" alt="Beef Fried Rice" />
           <a
             class="btn"
@@ -165,10 +227,10 @@
       </section>
       <section class="grill">
         <h2>Grill</h2>
-        <article data-category="grill">
+        <article class="menu_item" data-category="grill">
           <h3>Nyama Choma</h3>
           <p>Succulent grilled beef served with kachumbari and ugali</p>
-          <span>Price:KSh 750</span>
+          <span class="price">KSh 750</span>
           <img src="images/nyamachoma.webp" alt="Nyama Choma" />
           <a
             class="btn"
@@ -176,10 +238,10 @@
             >Order</a
           >
         </article>
-        <article data-category="grill">
+        <article class="menu_item" data-category="grill">
           <h3>Grilled Chicken</h3>
           <p>Marinated chicken grilled to perfection and served with fries</p>
-          <span>Price:KSh 650</span>
+          <span class="price">KSh 650</span>
           <img src="images/grilledchikenmenu.avif" alt="Grilled Chicken" />
           <a
             class="btn"
@@ -187,10 +249,10 @@
             >Order</a
           >
         </article>
-        <article data-category="grill">
+        <article class="menu_item" data-category="grill">
           <h3>Beef Skewers</h3>
           <p>Seasoned grilled beef skewers served with kachumbari</p>
-          <span>Price:KSh 600</span>
+          <span class="price">KSh 600</span>
           <img src="images/beefskewers.avif" alt="Beef Skewers" />
           <a
             class="btn"
@@ -198,10 +260,10 @@
             >Order</a
           >
         </article>
-        <article data-category="grill">
+        <article class="menu_item" data-category="grill">
           <h3>Grilled Pork Ribs</h3>
           <p>Slow-grilled pork ribs with a smoky glaze and fries</p>
-          <span>Price:KSh 800</span>
+          <span class="price">KSh 800</span>
           <img src="images/porkribs.avif" alt="Grilled Pork Ribs" />
           <a
             class="btn"
@@ -209,10 +271,10 @@
             >Order</a
           >
         </article>
-        <article data-category="grill">
+        <article class="menu_item" data-category="grill">
           <h3>Mixed Grill Platter</h3>
           <p>A selection of grilled beef, chicken and sausages with fries</p>
-          <span>Price:KSh 950</span>
+          <span class="price">KSh 950</span>
           <img src="images/mixedplatter.avif" alt="Mixed Grill Platter" />
           <a
             class="btn"
@@ -220,10 +282,10 @@
             >Order</a
           >
         </article>
-        <article data-category="grill">
+        <article class="menu_item" data-category="grill">
           <h3>Grilled Beef Steak</h3>
           <p>Tender grilled steak served with fries and vegetables</p>
-          <span>Price:KSh 800</span>
+          <span class="price">KSh 800</span>
           <img src="images/grilledbeefstake.avif" alt="Grilled Beef Steak" />
           <a
             class="btn"
@@ -231,13 +293,13 @@
             >Order</a
           >
         </article>
-        <article data-category="grill">
+        <article class="menu_item" data-category="grill">
           <h3>Mutton Choma</h3>
           <p>
             Tender, well-seasoned mutton grilled over an open flame and served
             with kachumbari and ugali
           </p>
-          <span>Price:KSh 800</span>
+          <span class="price">KSh 800</span>
           <img src="images/muttonchoma.avif" alt="Mutton Choma" />
           <a
             class="btn"
@@ -248,10 +310,10 @@
       </section>
       <section class="drinks">
         <h2>Drinks</h2>
-        <article data-category="drinks">
+        <article class="menu_item" data-category="drinks">
           <h3>Fresh Passion Juice</h3>
           <p>Chilled fresh passion fruit juice</p>
-          <span>Price:KSh 200</span>
+          <span class="price">KSh 200</span>
           <img src="images/passionjuice.avif" alt="Fresh Passion Juice" />
           <a
             class="btn"
@@ -259,10 +321,10 @@
             >Order</a
           >
         </article>
-        <article data-category="drinks">
+        <article class="menu_item" data-category="drinks">
           <h3>Fresh Mango Juice</h3>
           <p>Naturally sweet mango juice served chilled</p>
-          <span>Price:KSh 200</span>
+          <span class="price">KSh 200</span>
           <img src="images/mangojuice.avif" alt="Fresh Mango Juice" />
           <a
             class="btn"
@@ -270,10 +332,10 @@
             >Order</a
           >
         </article>
-        <article data-category="drinks">
+        <article class="menu_item" data-category="drinks">
           <h3>Kenyan Chai</h3>
           <p>Hot, creamy Kenyan tea</p>
-          <span>Price:KSh 200</span>
+          <span class="price">KSh 200</span>
           <img src="images/kenyantea.avif" alt="Kenyan Chai" />
           <a
             class="btn"
@@ -281,10 +343,10 @@
             >Order</a
           >
         </article>
-        <article data-category="drinks">
+        <article class="menu_item" data-category="drinks">
           <h3>Soda</h3>
           <p>Choice of assorted soft drinks</p>
-          <span>Price:KSh 120</span>
+          <span class="price">KSh 120</span>
           <img src="images/soda.avif" alt="Soda" />
           <a
             class="btn"
@@ -296,34 +358,46 @@
     </main>
 
     <footer>
-      <div class="footer_logo">
-        <div class="logo_main">MAMBO</div>
-        <div class="logo_sub">GRILL & CAFÉ</div>
-      </div>
-      <div class="footer_links">
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">About Us</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="contacts.html">Contacts</a>
-      </div>
-      <div class="social_links">
-        <div class="tiktok">
-          <i class="fa-brands fa-tiktok"></i>
-          <a href="#">@mambogrillcafe</a>
+      <div class="footer_main">
+        <div class="footer_logo">
+          <div class="logo_main">MAMBO</div>
+          <div class="logo_sub">GRILL & CAFÉ</div>
         </div>
-        <div class="instagram">
-          <i class="fa-brands fa-instagram"></i>
-          <a href="#">@mambogrillcafe</a>
+        <div class="footer_links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contacts.html">Contacts</a>
         </div>
-        <div class="facebook">
-          <i class="fa-brands fa-facebook"></i>
-          <a href="#">@mambogrillcafe</a>
+        <div class="social_links">
+          <div class="tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+          <div class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
+          <div class="facebook">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="#">@mambogrillcafe</a>
+          </div>
         </div>
       </div>
       <div class="copyright">
         <p>&copy; 2026 Mambo Grill & Café. All rights reserved.</p>
       </div>
     </footer>
+    <a
+      class="whatsapp_float"
+      href="https://wa.me/254712345678?text=Hello%20Mambo%20Grill%20%26%20Caf%C3%A9%2C%20I%20have%20a%20question"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script src="js/script.js"></script>
   </body>
 </html>
